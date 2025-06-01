@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Poster Result</title>
+</head>
+<body>
+    <h1>Your Favorite Movie</h1>
+    <p><strong>{{ movie }}</strong></p>
+    <img src="{{ url_for('static', filename='posters/' + filename) }}" alt="Movie Poster" width="300">
+    <br><br>
+    <a href="{{ url_for('index') }}">Submit another movie</a>
+</body>
+</html>
